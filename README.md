@@ -1,5 +1,5 @@
 # Ex02 Django ORM Web Application
-## Date: 1-.10.26
+## Date: 10.10.26
 
 ## AIM
 To develop a Django Application to store and retrieve data from a Vehicle Service Database platform using Object Relational Mapping(ORM).
