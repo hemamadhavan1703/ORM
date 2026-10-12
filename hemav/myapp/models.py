@@ -10,4 +10,4 @@ class vehicle_DB(models.Model):
     Service_Type=models.CharField(max_length=30)
 
 class vehicle_DBAdmin(admin.ModelAdmin):
-    list_display=["Customer_Name","Bike_Models","Service_no"]
+    list_display=["Customer_Name","Bike_Models","Service_no","Service_Date","Service_Cost","Address","Service_Type"]

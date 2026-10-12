@@ -36,7 +36,7 @@ Execute Django admin using localhost and create details for 10 entries
 ## PROGRAM
 ```
 
-
+models.py
 from django.db import models
 from django.contrib import admin
 class vehicle_DB(models.Model):
@@ -49,9 +49,10 @@ class vehicle_DB(models.Model):
     Service_Type=models.CharField(max_length=30)
 
 class vehicle_DBAdmin(admin.ModelAdmin):
-    list_display=["Customer_Name","Bike_Models","Service_no"]
+    list_display=["Customer_Name","Bike_Models","Service_no","Service_Date","Service_Cost","Address","Service_Type"]
 
 
+admin.py
 from django.contrib import admin
 from.models import vehicle_DB,vehicle_DBAdmin
 admin.site.register(vehicle_DB,vehicle_DBAdmin)
@@ -62,7 +63,7 @@ admin.site.register(vehicle_DB,vehicle_DBAdmin)
 
 
 ## OUTPUT
-![alt text](<Screenshot 2026-10-09 111740.png>)
+![alt text](image.png)
 
 
 ## RESULT
